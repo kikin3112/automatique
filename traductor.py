@@ -1,4 +1,4 @@
-# traductor.py - Traduce cualquier palabra o texto.
+# traductor.py - Traduce cualquier palabra o texto en los idiomas soportados.
 
 import webbrowser
 from urllib.parse import quote
@@ -17,7 +17,6 @@ a = idiomas[idioma_salida]
 
 entrada = input('Escribe para traducir: ')
 texto = quote(entrada)
-#print(texto)
 
 webbrowser.open('https://www.reverso.net/traducci%C3%B3n-texto#sl={}&tl={}&text={}'.format(de,
                                                                                            a,
