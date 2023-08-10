@@ -10,4 +10,10 @@ else:
     #Correr el script con portapapeles
     direccion = pyperclip.paste().replace('#', ',')
 
-webbrowser.open('https://www.google.com/maps/place/' + direccion)
+ciudad = 'Cali' #input('Ingrese la ciudad: ')
+departamento = 'Valle' #input('Ingrese el departamento: ')
+pais = 'Colombia' #input('Ingrese el país: ')
+
+webbrowser.open('https://www.google.com/maps/place/' + direccion + ', {}, {}, {}'.format(ciudad,
+                                                                                         departamento,
+                                                                                         pais))
